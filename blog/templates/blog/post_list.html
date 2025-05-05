@@ -10,12 +10,6 @@
         {% for post in posts %}
         
             <article>
-                <time>published: 4.29.2025, 1:43pm</time>
-                <h2><a href="">My first post</a></h2>
-                <p>GPS satellite based positioning and Satellite based telecommunications technology allows the tracking of items traveling overseas or long distances.</p>
-            </article>
-
-            <article>
                 <time>published: {{ post.published_date }}</time>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
